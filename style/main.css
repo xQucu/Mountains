@@ -1,5 +1,107 @@
+#main-footer a {
+  color: white;
+}
+
+#main-footer a:hover {
+  color: #f8b195;
+  font-size: x-large;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7,
+.bgimg-8,
+.bgimg-9 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("../images/cartoon1.png");
+  min-height: 50vh;
+  opacity: 0.65;
+}
+
+@media only screen and (max-width: 992px) {
+  .bgimg-1::before {
+    content: "Highest mountain peaks in the world";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    background-color: lightcyan;
+    font-size: x-large;
+  }
+}
+.bgimg-2 {
+  background-image: url("../images/cartoon2.png");
+  min-height: 450px;
+}
+
+.bgimg-3 {
+  background-image: url("../images/cartoon3.png");
+  min-height: 450px;
+}
+
+.bgimg-4 {
+  background-image: url("../images/cartoon4.png");
+  min-height: 450px;
+}
+
+.bgimg-5 {
+  background-image: url("../images/cartoon5.png");
+  min-height: 450px;
+}
+
+.bgimg-6 {
+  background-image: url("../images/cartoon6.png");
+  min-height: 450px;
+}
+
+.bgimg-7 {
+  background-image: url("../images/cartoon7.png");
+  min-height: 450px;
+}
+
+.bgimg-8 {
+  background-image: url("../images/cartoon8.png");
+  min-height: 450px;
+}
+
+.bgimg-9 {
+  background-image: url("../images/cartoon9.png");
+  min-height: 450px;
+}
+
+.caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+figure {
+  padding: 18px;
+  font-size: 25px;
+  border: 0.5px solid gold;
+}
+
 body {
   height: 300vh;
+}
+
+.photo {
+  max-width: 100%;
 }
 
 figure:hover {
@@ -7,6 +109,9 @@ figure:hover {
 }
 
 @media only screen and (min-width: 992px) {
+  .bgimg-1 {
+    min-height: 100vh !important;
+  }
   .orbit {
     position: absolute;
   }

@@ -1,252 +1,345 @@
+#main-footer a {
+  color: white;
+}
+
+#main-footer a:hover {
+  color: #f8b195;
+  font-size: x-large;
+}
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7,
+.bgimg-8,
+.bgimg-9 {
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url('../images/cartoon1.png');
+  min-height: 50vh;
+  opacity: 0.65;
+}
+@media only screen and (max-width: 992px) {
+  .bgimg-1::before {
+    content: 'Highest mountain peaks in the world';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    background-color: lightcyan;
+    font-size: x-large;
+  }
+}
+
+.bgimg-2 {
+  background-image: url('../images/cartoon2.png');
+  min-height: 450px;
+}
+
+.bgimg-3 {
+  background-image: url('../images/cartoon3.png');
+  min-height: 450px;
+}
+.bgimg-4 {
+  background-image: url('../images/cartoon4.png');
+  min-height: 450px;
+}
+.bgimg-5 {
+  background-image: url('../images/cartoon5.png');
+  min-height: 450px;
+}
+.bgimg-6 {
+  background-image: url('../images/cartoon6.png');
+  min-height: 450px;
+}
+.bgimg-7 {
+  background-image: url('../images/cartoon7.png');
+  min-height: 450px;
+}
+.bgimg-8 {
+  background-image: url('../images/cartoon8.png');
+  min-height: 450px;
+}
+.bgimg-9 {
+  background-image: url('../images/cartoon9.png');
+  min-height: 450px;
+}
+
+.caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+figure {
+  padding: 18px;
+  font-size: 25px;
+  border: 0.5px solid gold;
+}
 body {
   height: 300vh;
 }
-
-figure:hover{
-transform: scale(1.1);
+.photo {
+  max-width: 100%;
+}
+figure:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 992px) {
-  
-.orbit {
-  position: absolute;
-  *{
-    color: black;
-    animation: enter-animation 10s linear;
+  .bgimg-1 {
+    min-height: 100vh !important;
   }
-}
+  .orbit {
+    position: absolute;
+    * {
+      color: black;
+      animation: enter-animation 10s linear;
+    }
+  }
 
-.box {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
-}
+  .box {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+  }
 
-.in-center {
-  transform: translate(-50%, -50%);
-}
+  .in-center {
+    transform: translate(-50%, -50%);
+  }
 
-.orbit1 {
-  transform: translate(-50%, -50%);
-  animation: orbit1 10s linear infinite;
-}
+  .orbit1 {
+    transform: translate(-50%, -50%);
+    animation: orbit1 10s linear infinite;
+  }
 
-.orbit2 {
-  transform: translate(-50%, -50%);
-  animation: orbit2 10s linear infinite;
-}
+  .orbit2 {
+    transform: translate(-50%, -50%);
+    animation: orbit2 10s linear infinite;
+  }
 
-.orbit3 {
-  transform: translate(-50%, -50%);
-  animation: orbit3 10s linear infinite;
-}
+  .orbit3 {
+    transform: translate(-50%, -50%);
+    animation: orbit3 10s linear infinite;
+  }
 
-.orbit4 {
-  transform: translate(-50%, -50%);
-  animation: orbit4 10s linear infinite;
-}
+  .orbit4 {
+    transform: translate(-50%, -50%);
+    animation: orbit4 10s linear infinite;
+  }
 
-.orbit5 {
-  transform: translate(-50%, -50%);
-  animation: orbit5 10s linear infinite;
-}
+  .orbit5 {
+    transform: translate(-50%, -50%);
+    animation: orbit5 10s linear infinite;
+  }
 
-.orbit6 {
-  transform: translate(-50%, -50%);
-  animation: orbit6 10s linear infinite;
-}
+  .orbit6 {
+    transform: translate(-50%, -50%);
+    animation: orbit6 10s linear infinite;
+  }
 
-.orbit7 {
-  transform: translate(-50%, -50%);
-  animation: orbit7 10s linear infinite;
-}
+  .orbit7 {
+    transform: translate(-50%, -50%);
+    animation: orbit7 10s linear infinite;
+  }
 
-.orbit8 {
-  transform: translate(-50%, -50%);
-  animation: orbit8 10s linear infinite;
-}
+  .orbit8 {
+    transform: translate(-50%, -50%);
+    animation: orbit8 10s linear infinite;
+  }
 
-@keyframes enter-animation {
-  from {
-    color: rgba(255, 255, 255, 0);
+  @keyframes enter-animation {
+    from {
+      color: rgba(255, 255, 255, 0);
+    }
+    to {
+      color: rgb(0, 0, 0);
+      text-shadow: navy;
+    }
   }
-  to {
-    color: rgb(0, 0, 0);
-    text-shadow: navy;
+  @keyframes orbit1 {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translate(150px);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(90deg) translate(250px);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(180deg) translate(350px);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(270deg) translate(250px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translate(150px);
+    }
   }
-}
-@keyframes orbit1 {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg) translate(150px);
-  }
-  25% {
-    transform: translate(-50%, -50%) rotate(90deg) translate(250px);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(180deg) translate(350px);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(270deg) translate(250px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg) translate(150px);
-  }
-}
 
-@keyframes orbit2 {
-  0% {
-    transform: translate(-50%, -50%) rotate(45deg) translate(250px);
+  @keyframes orbit2 {
+    0% {
+      transform: translate(-50%, -50%) rotate(45deg) translate(250px);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(135deg) translate(350px);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(225deg) translate(250px);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(315deg) translate(150px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(405deg) translate(250px);
+    }
   }
-  25% {
-    transform: translate(-50%, -50%) rotate(135deg) translate(350px);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(225deg) translate(250px);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(315deg) translate(150px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(405deg) translate(250px);
-  }
-}
 
-@keyframes orbit3 {
-  0% {
-    transform: translate(-50%, -50%) rotate(90deg) translate(350px);
+  @keyframes orbit3 {
+    0% {
+      transform: translate(-50%, -50%) rotate(90deg) translate(350px);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(180deg) translate(250px);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(270deg) translate(150px);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(360deg) translate(250px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(450deg) translate(350px);
+    }
   }
-  25% {
-    transform: translate(-50%, -50%) rotate(180deg) translate(250px);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(270deg) translate(150px);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(360deg) translate(250px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(450deg) translate(350px);
-  }
-}
 
-@keyframes orbit4 {
-  0% {
-    transform: translate(-50%, -50%) rotate(135deg) translate(250px);
+  @keyframes orbit4 {
+    0% {
+      transform: translate(-50%, -50%) rotate(135deg) translate(250px);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(225deg) translate(150px);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(315deg) translate(250px);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(405deg) translate(350px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(495deg) translate(250px);
+    }
   }
-  25% {
-    transform: translate(-50%, -50%) rotate(225deg) translate(150px);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(315deg) translate(250px);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(405deg) translate(350px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(495deg) translate(250px);
-  }
-}
 
-@keyframes orbit5 {
-  0% {
-    transform: translate(-50%, -50%) rotate(180deg) translate(150px);
+  @keyframes orbit5 {
+    0% {
+      transform: translate(-50%, -50%) rotate(180deg) translate(150px);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(270deg) translate(250px);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(360deg) translate(350px);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(450deg) translate(250px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(540deg) translate(150px);
+    }
   }
-  25% {
-    transform: translate(-50%, -50%) rotate(270deg) translate(250px);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(360deg) translate(350px);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(450deg) translate(250px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(540deg) translate(150px);
-  }
-}
 
-@keyframes orbit6 {
-  0% {
-    transform: translate(-50%, -50%) rotate(225deg) translate(250px);
+  @keyframes orbit6 {
+    0% {
+      transform: translate(-50%, -50%) rotate(225deg) translate(250px);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(315deg) translate(150px);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(405deg) translate(250px);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(495deg) translate(350px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(585deg) translate(250px);
+    }
   }
-  25% {
-    transform: translate(-50%, -50%) rotate(315deg) translate(150px);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(405deg) translate(250px);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(495deg) translate(350px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(585deg) translate(250px);
-  }
-}
 
-@keyframes orbit7 {
-  0% {
-    transform: translate(-50%, -50%) rotate(270deg) translate(350px);
+  @keyframes orbit7 {
+    0% {
+      transform: translate(-50%, -50%) rotate(270deg) translate(350px);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(360deg) translate(250px);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(450deg) translate(150px);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(540deg) translate(250px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(630deg) translate(350px);
+    }
   }
-  25% {
-    transform: translate(-50%, -50%) rotate(360deg) translate(250px);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(450deg) translate(150px);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(540deg) translate(250px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(630deg) translate(350px);
-  }
-}
 
-@keyframes orbit8 {
-  0% {
-    transform: translate(-50%, -50%) rotate(315deg) translate(150px);
+  @keyframes orbit8 {
+    0% {
+      transform: translate(-50%, -50%) rotate(315deg) translate(150px);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(405deg) translate(250px);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(495deg) translate(350px);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(585deg) translate(250px);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(675deg) translate(150px);
+    }
   }
-  25% {
-    transform: translate(-50%, -50%) rotate(405deg) translate(250px);
+  /* Menu */
+  nav {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background 0.5s;
   }
-  50% {
-    transform: translate(-50%, -50%) rotate(495deg) translate(350px);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(585deg) translate(250px);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(675deg) translate(150px);
-  }
-}
-/* Menu */
-nav {
-  background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  transition: background 0.5s;
-}
 
-nav.bg-light {
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  nav.bg-light {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
 
-nav .navbar-brand {
-  font-weight: 700;
-  font-size: 1.5rem;
-}
+  nav .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
 
-nav .nav-link {
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
+  nav .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
 
-#main-menu .nav-link:hover {
-  color: #f8b195;
-  transform: scale(1.2);
-}
+  #main-menu .nav-link:hover {
+    color: #f8b195;
+    transform: scale(1.2);
+  }
 }

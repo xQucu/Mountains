@@ -18,56 +18,13 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
-    <style>
-      body,
-      html {
-        height: 100%;
-      }
-
-      .bgimg-1,
-      .bgimg-2,
-      .bgimg-3 {
-        position: relative;
-
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .bgimg-1 {
-        background-image: url('/images/cartoon1.png');
-        min-height: 100vw;
-        opacity: 0.65;
-      }
-
-      .bgimg-2 {
-        background-image: url('./images/cartoon2.png');
-        min-height: 400px;
-      }
-
-      .bgimg-3 {
-        background-image: url('./images/cartoon3.png');
-        min-height: 400px;
-      }
-
-      .caption {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-      figure {
-        padding: 18px;
-        font-size: 25px;
-        border: 0.5px solid gold;
-      }
-    </style>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Menu -->
     <nav id="main-menu" class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand in-center-hook title active" href="main.html"
+        <a class="navbar-brand in-center-hook title active" href="index.html"
           >Highest mountain peaks in the world</a
         >
         <button
@@ -85,7 +42,7 @@
             <li class="nav-item orbit-hook orbit1-hook">
               <a
                 class="nav-link"
-                href="siteOne.html"
+                href="m1.html"
                 title="The highest mountain peak in the world"
                 >Mount Everest</a
               >
@@ -93,7 +50,7 @@
             <li class="nav-item orbit-hook orbit2-hook">
               <a
                 class="nav-link"
-                href="#"
+                href="m2.html"
                 title="The second highest mountain peak in the world"
                 >K2</a
               >
@@ -101,7 +58,7 @@
             <li class="nav-item orbit-hook orbit3-hook">
               <a
                 class="nav-link"
-                href="#"
+                href="m3.html"
                 title="The third highest mountain peak in the world"
                 >Kangchenjunga</a
               >
@@ -109,7 +66,7 @@
             <li class="nav-item orbit-hook orbit4-hook">
               <a
                 class="nav-link"
-                href="#"
+                href="m4.html"
                 title="The fourth highest mountain peak in the world"
                 >Lhotse</a
               >
@@ -117,7 +74,7 @@
             <li class="nav-item orbit-hook orbit5-hook">
               <a
                 class="nav-link"
-                href="#"
+                href="m5.html"
                 title="The fifth highest mountain peak in the world"
                 >Makalu</a
               >
@@ -125,7 +82,7 @@
             <li class="nav-item orbit-hook orbit6-hook">
               <a
                 class="nav-link"
-                href="#"
+                href="m6.html"
                 title="The sixth highest mountain peak in the world"
                 >Cho Oyu</a
               >
@@ -133,7 +90,7 @@
             <li class="nav-item orbit-hook orbit7-hook">
               <a
                 class="nav-link"
-                href="#"
+                href="m7.html"
                 title="The seventh highest mountain peak in the world"
                 >Dhaulagiri</a
               >
@@ -141,7 +98,7 @@
             <li class="nav-item orbit-hook orbit8-hook">
               <a
                 class="nav-link"
-                href="#"
+                href="m8.html"
                 title="The eighth highest mountain peak in the world"
                 >Manaslu</a
               >
@@ -151,145 +108,410 @@
         </div>
       </div>
     </nav>
-
+    <!-- main content -->
     <div id="container">
-      <div class="bgimg-1">
-        <!-- <div class="caption">
-          <span class="border">SCROLL DOWN</span>
-        </div> -->
-      </div>
+      <div class="bgimg-1"></div>
 
-      <div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          aliquid cumque ipsa facere, nam impedit sequi recusandae dignissimos
-          minus totam sed, aliquam libero at perspiciatis. Fugit deserunt nulla
-          sunt voluptas?
-        </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-5" data-aos="fade-right">
+            <img src="./images/m1-1.jpg" class="photo" alt="" />
+          </div>
+          <div class="col-md-6 py-5 pe-5" data-aos="fade-left">
+            <h2>Mount Everest</h2>
+            <p>
+              Mount Everest is the highest mountain peak in the world, standing
+              at an elevation of 8,848 meters (29,029 feet) above sea level. It
+              is located in the Himalayas, on the border between Nepal and
+              China.
+            </p>
+            <p>
+              Everest, also known as Sagarmatha in Nepal and Qomolangma in
+              Tibet, is considered the crown jewel of mountaineering and
+              attracts thousands of climbers every year from all over the world.
+              It was first successfully climbed by Sir Edmund Hillary of New
+              Zealand and Tenzing Norgay, a Sherpa of Nepal, in 1953.
+            </p>
+            <p>
+              The mountain is known for its extreme weather conditions,
+              including strong winds, low temperatures, and low oxygen levels.
+              It also requires a high level of technical climbing skills and
+              physical fitness. Despite the challenges, many people are drawn to
+              the mountain's beauty and the sense of accomplishment that comes
+              with reaching its summit.
+            </p>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
+        </div>
       </div>
 
       <div class="bgimg-2">
-        <div class="caption">
+        <div class="caption" data-aos="zoom-in">
           <figure class="text-center bg-dark text-white">
             <blockquote class="blockquote">
-              <p>A well-known quote, contained in a blockquote element.</p>
+              <p>The climb is what it's all about.</p>
             </blockquote>
-            <figcaption class="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </figcaption>
+            <figcaption class="blockquote-footer">Royal Robbins</figcaption>
           </figure>
         </div>
       </div>
 
-      <div">
-        <div>
-          <p>
-            <!-- todo dodać jakiś wygląd sekcji z górami, następnie dodać quotes oraz przekopiować i uzupełnić stopkę -->
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
-            suscipit, totam culpa est dolores magni nostrum illo aut eligendi
-            quam fugit natus placeat voluptas animi voluptates commodi. Quidem,
-            nobis natus.
-          </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-5 pe-5" data-aos="fade-right">
+            <h2>K2</h2>
+            <p>
+              K2 is the second highest mountain peak in the world, standing at
+              an elevation of 8,611 meters (28,251 feet) above sea level. It is
+              located in the Karakoram mountain range in Pakistan and China.
+            </p>
+            <p>
+              K2, also known as Chhogori, is considered one of the most
+              challenging and dangerous mountains to climb due to its steep and
+              technical routes, unpredictable weather, and the risk of
+              avalanches and rockfalls. It has a lower success rate for summit
+              attempts compared to other 8,000-meter peaks, and has been
+              referred to as the "Savage Mountain" due to the high number of
+              fatalities that have occurred on its slopes.
+            </p>
+            <p>
+              Despite the challenges, K2 remains a highly coveted climbing
+              destination for experienced mountaineers. It was first
+              successfully climbed in 1954 by an Italian expedition led by
+              Ardito Desio. Reaching the summit of K2 requires a high level of
+              physical fitness, technical climbing skills, and mental toughness.
+            </p>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
+          <div class="col-md-6 py-5" data-aos="fade-left">
+            <img src="./images/m2-1.jpg" class="photo" alt="" />
+          </div>
         </div>
-      </di=>
-
+      </div>
       <div class="bgimg-3">
-        <div class="caption">
+        <div class="caption" data-aos="zoom-in">
           <figure class="text-center bg-dark text-white">
             <blockquote class="blockquote">
-              <p>A well-known quote, contained in a blockquote element.</p>
+              <p>
+                If you can't fly then run, if you can't run then walk, if you
+                can't walk then crawl, but whatever you do you have to keep
+                moving forward
+              </p>
             </blockquote>
             <figcaption class="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
+              Martin Luther King Jr
             </figcaption>
           </figure>
         </div>
       </div>
 
-      <div">
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            dolores ut et inventore! Expedita porro impedit dolore, sapiente
-            ducimus quaerat consequuntur odit culpa velit nam ut vero voluptates
-            esse saepe!
-          </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-5" data-aos="fade-right">
+            <img src="./images/m3-1.jpg" class="photo" alt="" />
+          </div>
+          <div class="col-md-6 py-5 pe-5" data-aos="fade-left">
+            <h2>Kangchenjunga</h2>
+            <p>
+              Kangchenjunga is the third highest mountain peak in the world,
+              standing at an elevation of 8,586 meters (28,169 feet) above sea
+              level. It is located in the Himalayas on the border between Nepal
+              and India.
+            </p>
+            <p>
+              Kangchenjunga, also known as "Five Treasures of Snow," is the
+              highest peak in India and is considered a holy mountain by the
+              local people. It was first successfully climbed in 1955 by a
+              British expedition led by Joe Brown and George Band.
+            </p>
+            <p>
+              The mountain is known for its harsh and isolated location, with
+              long and technical routes and the risk of avalanches and
+              crevasses. It requires a high level of physical fitness and
+              technical climbing skills. Despite the challenges, Kangchenjunga
+              remains a popular destination for experienced mountaineers due to
+              its stunning views and the sense of accomplishment that comes with
+              reaching its summit.
+            </p>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
         </div>
       </div>
 
-      <div class="bgimg-2">
-        <div class="caption">
+      <div class="bgimg-4">
+        <div class="caption" data-aos="zoom-in">
           <figure class="text-center bg-dark text-white">
             <blockquote class="blockquote">
-              <p>A well-known quote, contained in a blockquote element.</p>
+              <p>
+                Climbing is not just about the summit, it's about the journey
+                and the people you share it with.
+              </p>
             </blockquote>
-            <figcaption class="blockquote-footer">
-              Someone famous in <cite title="Source Title">Source Title</cite>
-            </figcaption>
+            <figcaption class="blockquote-footer">Unknown</figcaption>
           </figure>
         </div>
       </div>
 
-      <div">
-        <div>
-          <p>
-            stopka
-          </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-5 pe-5" data-aos="fade-right">
+            <h2>Lhotse</h2>
+            <p>
+              Lhotse is the fourth highest mountain peak in the world, standing
+              at an elevation of 8,516 meters (27,940 feet) above sea level. It
+              is located in the Himalayas on the border between Nepal and Tibet.
+            </p>
+            <p>
+              Lhotse is considered a challenging mountain to climb, with long
+              and technical routes and the risk of avalanches and crevasses. It
+              requires a high level of physical fitness and technical climbing
+              skills. It was first successfully climbed in 1956 by a Swiss
+              expedition led by Ernst Reiss and Fritz Luchsinger.
+            </p>
+            <p>
+              Lhotse is often climbed as part of a expedition to Mount Everest,
+              as the two peaks share the same base camp and some of the same
+              route to the summit. The mountain is known for its stunning views
+              and the sense of accomplishment that comes with reaching its
+              summit.
+            </p>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
+          <div class="col-md-6 py-5" data-aos="fade-left">
+            <img src="./images/m4-1.jpg" class="photo" alt="" />
+          </div>
         </div>
       </div>
+      <div class="bgimg-5">
+        <div class="caption" data-aos="zoom-in">
+          <figure class="text-center bg-dark text-white">
+            <blockquote class="blockquote">
+              <p>The mountains are a good place to think and to feel.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">John Muir</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-5" data-aos="fade-right">
+            <img src="./images/m5-1.jpg" class="photo" alt="" />
+          </div>
+          <div class="col-md-6 py-5 pe-5" data-aos="fade-left">
+            <h2>Makalu</h2>
+            <p>
+              Makalu is the fifth highest mountain peak in the world, standing
+              at an elevation of 8,485 meters (27,838 feet) above sea level. It
+              is located in the Himalayas on the border between Nepal and China.
+            </p>
+            <p>
+              Makalu is considered a challenging mountain to climb due to its
+              steep and technical routes, and the risk of avalanches and
+              rockfalls. It requires a high level of physical fitness and
+              technical climbing skills. It was first successfully climbed in
+              1955 by an American expedition led by Charles Houston.
+            </p>
+            <p>
+              Makalu is known for its stunning views and the sense of
+              accomplishment that comes with reaching its summit. It is a
+              popular destination for experienced mountaineers due to its beauty
+              and the challenges it presents.
+            </p>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bgimg-6">
+        <div class="caption" data-aos="zoom-in">
+          <figure class="text-center bg-dark text-white">
+            <blockquote class="blockquote">
+              <p>
+                A mountain is composed of tiny grains of earth. The ocean is
+                made up of tiny drops of water. Even so, life is but an endless
+                series of little details, actions, speeches, and thoughts.
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Swami Sivananda</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-5 pe-5" data-aos="fade-right">
+            <h2>Cho Oyu</h2>
+            <p>
+              Cho Oyu is the sixth highest mountain peak in the world, standing
+              at an elevation of 8,188 meters (26,864 feet) above sea level. It
+              is located in the Himalayas on the border between Nepal and Tibet.
+            </p>
+            <p>
+              Cho Oyu is considered a moderate mountain to climb compared to
+              some of the other 8,000-meter peaks in the region. It has a lower
+              elevation and less technical routes than many of the other highest
+              peaks. It was first successfully climbed in 1954 by an Austrian
+              expedition led by Herbert Tichy.
+            </p>
+            <p>
+              Despite its lower level of difficulty, Cho Oyu still presents some
+              challenges due to its high altitude and the risk of avalanches and
+              rockfalls. It requires a high level of physical fitness and
+              technical climbing skills. The mountain is known for its stunning
+              views and the sense of accomplishment that comes with reaching its
+              summit.
+            </p>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
+          <div class="col-md-6 py-5" data-aos="fade-left">
+            <img src="./images/m6-1.jpg" class="photo" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bgimg-7">
+        <div class="caption" data-aos="zoom-in">
+          <figure class="text-center bg-dark text-white">
+            <blockquote class="blockquote">
+              <p>
+                The best climber in the world is the one having the most fun.
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Alex Lowe</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-5" data-aos="fade-right">
+            <img src="./images/m7-1.jpg" class="photo" alt="" />
+          </div>
+          <div class="col-md-6 py-5 pe-5" data-aos="fade-left">
+            <h2>Dhaulagiri</h2>
+            <p>
+              Dhaulagiri is the seventh highest mountain peak in the world,
+              standing at an elevation of 8,167 meters (26,795 feet) above sea
+              level. It is located in the Himalayas in Nepal.
+            </p>
+            <p>
+              Dhaulagiri is considered a challenging mountain to climb due to
+              its steep and technical routes, and the risk of avalanches and
+              rockfalls. It requires a high level of physical fitness and
+              technical climbing skills. It was first successfully climbed in
+              1960 by a Swiss expedition led by Max Eiselin.
+            </p>
+            <p>
+              Dhaulagiri is known for its stunning views and the sense of
+              accomplishment that comes with reaching its summit. It is a
+              popular destination for experienced mountaineers due to its beauty
+              and the challenges it presents.
+            </p>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bgimg-8">
+        <div class="caption" data-aos="zoom-in">
+          <figure class="text-center bg-dark text-white">
+            <blockquote class="blockquote">
+              <p>The way up and the way down are the same.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Heraclitus</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 py-5 pe-5" data-aos="fade-right">
+            <h2>Manaslu</h2>
+            <p>
+              Manaslu is the eighth highest mountain peak in the world, located
+              in the Himalayas of Nepal. It stands at 8,163 meters (26,781 feet)
+              above sea level and presents a challenging climb for mountaineers
+              due to its steep and technical routes and the risk of avalanches
+              and rockfalls. Reaching the summit requires physical fitness and
+              technical skills.
+            </p>
+            <p>
+              Manaslu was first successfully climbed in 1956 by a Japanese
+              expedition led by Toshio Imanishi. Despite the challenges it
+              presents, the mountain remains a popular destination for
+              experienced climbers due to its stunning views and the sense of
+              accomplishment that comes with reaching the summit.
+            </p>
+            <button class="btn btn-primary">Learn more</button>
+          </div>
+          <div class="col-md-6 py-5" data-aos="fade-left">
+            <img src="./images/m8-1.jpg" class="photo" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bgimg-9">
+        <div class="caption" data-aos="zoom-in">
+          <figure class="text-center bg-dark text-white">
+            <blockquote class="blockquote">
+              <p>To climb steep hills requires slow pace at first.</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Shakespeare</figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer id="main-footer" class="py-5 bg-dark text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4" data-aos="flip-left">
+              <h4>Contact</h4>
+              <p>
+                <i class="bi bi-envelope"></i> kucykadrian2004@gmail.com<br />
+                <i class="bi bi-telephone"></i> 500899495
+              </p>
+            </div>
+            <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+              <h4>Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="m1.html">Mount Everest</a></li>
+                <li><a href="m2.html">K2</a></li>
+                <li><a href="m3.html">Kangchenjunga</a></li>
+                <li><a href="m4.html">Lhotse</a></li>
+                <li><a href="m5.html">Makalu</a></li>
+                <li><a href="m6.html">Cho Oyu</a></li>
+                <li><a href="m7.html">Dhaulagiri</a></li>
+                <li><a href="m8.html">Manaslu</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4" data-aos="flip-left" data-aos-delay="800">
+              <h4>About us</h4>
+              <p>
+                I have loved mountains ever since I can remember. The sense of
+                pride and accomplishment I feel when reaching the summit is
+                unparalleled, and the views from the top always take my breath
+                away. There is nothing like hitting the trails and feeling a
+                sense of freedom and connection with nature. I also love the
+                challenges that come with climbing and constantly improving my
+                skills. To me, mountains are a place of joy and relaxation,
+                where I can escape from daily worries and focus on myself and my
+                dreams.
+              </p>
+              <p>PS. that up here, isn't the truth</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      $(function () {
-        $('.visibility-toggler-box').html(`<input
-                type="checkbox"
-                class="btn-check"
-                id="btn-check-outlined"
-                autocomplete="off" />
-              <label
-                class="btn btn-outline-dark menu-visibility"
-                for="btn-check-outlined"
-                >Menu visibility</label
-              >`);
-        $('.menu-visibility').click(function () {
-          $('#main-menu').toggleClass('bg-light');
-        });
-      });
-      $(window).on('scroll', function () {
-        var scrollTop = $(this).scrollTop();
-        if (scrollTop > 700) {
-          $('.visibility-toggler-box').show();
-          $('.box-hook').removeClass('box');
-          $('.orbit-hook').removeClass('orbit');
-          $('.orbit1-hook').removeClass('orbit1');
-          $('.orbit2-hook').removeClass('orbit2');
-          $('.orbit3-hook').removeClass('orbit3');
-          $('.orbit4-hook').removeClass('orbit4');
-          $('.orbit5-hook').removeClass('orbit5');
-          $('.orbit6-hook').removeClass('orbit6');
-          $('.orbit7-hook').removeClass('orbit7');
-          $('.orbit8-hook').removeClass('orbit8');
-          $('.in-center-hook').removeClass('in-center box');
-        } else {
-          $('.visibility-toggler-box').off();
-          $('.visibility-toggler-box').hide();
-          $('.box-hook').addClass('box');
-          $('.orbit-hook').addClass('orbit');
-          $('.orbit1-hook').addClass('orbit1');
-          $('.orbit2-hook').addClass('orbit2');
-          $('.orbit3-hook').addClass('orbit3');
-          $('.orbit4-hook').addClass('orbit4');
-          $('.orbit5-hook').addClass('orbit5');
-          $('.orbit6-hook').addClass('orbit6');
-          $('.orbit7-hook').addClass('orbit7');
-          $('.orbit8-hook').addClass('orbit8');
-          $('.in-center-hook').addClass('in-center box');
-        }
-      });
+      AOS.init();
     </script>
   </body>
 </html>
