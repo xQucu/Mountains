@@ -1,0 +1,45 @@
+body {
+  scroll-behavior: smooth;
+}
+#main-footer a {
+  color: white;
+}
+
+#main-footer a:hover {
+  color: #f8b195;
+  font-size: x-large;
+}
+/* Menu */
+nav {
+  background-color: rgba($color: #ffffff, $alpha: 0.8) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background 0.5s;
+}
+
+nav.bg-light {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#main-menu .nav-link:hover {
+  color: #f8b195;
+  font-size: xx-large;
+}
+.active {
+  font-weight: bold !important;
+  font-size: large !important;
+}

@@ -1,12 +1,3 @@
-#main-footer a {
-  color: white;
-}
-
-#main-footer a:hover {
-  color: #f8b195;
-  font-size: x-large;
-}
-
 .bgimg-1,
 .bgimg-2,
 .bgimg-3,
@@ -458,31 +449,37 @@ figure:hover {
       transform: translate(-50%, -50%) rotate(675deg) translate(150px);
     }
   }
-  /* Menu */
-  nav {
-    background: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    transition: background 0.5s;
-  }
-  nav.bg-light {
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  nav .navbar-brand {
-    font-weight: 700;
-    font-size: 1.5rem;
-  }
-  nav .nav-link {
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
-  #main-menu .nav-link:hover {
-    color: #f8b195;
-    transform: scale(1.2);
-  }
+}
+/* Menu */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: background 0.5s;
+}
+
+nav.bg-light {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#main-menu .nav-link:hover {
+  color: #f8b195;
+  font-size: xx-large;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.8) !important;
 }/*# sourceMappingURL=main.css.map */

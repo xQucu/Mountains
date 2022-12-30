@@ -1,3 +1,4 @@
+"use strict";
 $(function () {
   var scrollTop = $(this).scrollTop();
   if (scrollTop > 300) {
@@ -28,19 +29,6 @@ $(function () {
     $('.orbit8-hook').addClass('orbit8');
     $('.in-center-hook').addClass('in-center box');
   }
-  $('.visibility-toggler-box').html(`<input
-            type="checkbox"
-            class="btn-check"
-            id="btn-check-outlined"
-            autocomplete="off" />
-          <label
-            class="btn btn-outline-dark menu-visibility"
-            for="btn-check-outlined"
-            >Menu visibility</label
-          >`);
-  $('.menu-visibility').click(function () {
-    $('#main-menu').toggleClass('bg-light');
-  });
 });
 $(window).on('scroll', function () {
   var scrollTop = $(this).scrollTop();
