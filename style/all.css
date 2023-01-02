@@ -1,3 +1,19 @@
-.card:hover, .photo:hover, .baner:hover {
+body {
+  overflow-x: clip;
+}
+
+.card:hover,
+.photo:hover,
+.baner:hover {
   scale: 1.1;
+}
+
+h2:hover {
+  font-size: xxx-large;
+}
+
+.m1 .bg-image1 {
+  background-image: url(../images/cartoon1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=all.css.map */
