@@ -17,7 +17,7 @@ $(function () {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-          <ul class="navbar-nav ml-auto box-hook visibility-toggler-hook">
+          <ul class="navbar-nav ml-auto box-hook align-items-center ">
             <li class="nav-item">
               <a
                 class="nav-link"

@@ -85,8 +85,10 @@ body {
 .photo {
   max-width: 100%;
 }
-figure:hover {
-  transform: scale(1.1);
+figure, .button-more {
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -333,6 +335,6 @@ nav .nav-link {
   color: #f8b195;
   font-size: xx-large;
 }
-nav{
-  background-color: rgba($color: #ffffff, $alpha: .8) !important;
+nav {
+  background-color: rgba($color: #ffffff, $alpha: 0.8) !important;
 }

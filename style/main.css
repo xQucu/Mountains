@@ -95,7 +95,7 @@ body {
   max-width: 100%;
 }
 
-figure:hover {
+figure:hover, .button-more:hover {
   transform: scale(1.1);
 }
 

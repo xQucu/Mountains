@@ -12,6 +12,81 @@ h2:hover {
   font-size: xxx-large;
 }
 
+.animation-container {
+  font-weight: 900;
+  position: relative;
+}
+.animation-container .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.animation-container .item {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.top-swiper .swiper {
+  width: 240px;
+  height: 320px;
+}
+.top-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.top-swiper .swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+.top-swiper .swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+.top-swiper .swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+.top-swiper .swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+.top-swiper .swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+.top-swiper .swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+.top-swiper .swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+.top-swiper .swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+.top-swiper .swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+.top-swiper .swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}
+
+.bottom-swiper .swiper {
+  width: 100vh;
+}
+.bottom-swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-swiper .swiper-slide img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .m1 .bg-image1 {
   background-image: url(../images/cartoon1.png);
   background-repeat: no-repeat;

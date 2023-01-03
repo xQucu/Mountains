@@ -37,9 +37,13 @@ nav .nav-link {
   letter-spacing: 1px;
 }
 
+#main-menu .navbar-nav {
+  height: 1em;
+}
+
 #main-menu .nav-link:hover {
   color: #f8b195;
-  font-size: xx-large;
+  font-size: x-large !important;
 }
 
 .active {
