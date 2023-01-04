@@ -35,8 +35,10 @@ nav .nav-link {
   letter-spacing: 1px;
 }
 
-#main-menu .navbar-nav {
-  height: 1em;
+@media only screen and (min-width: 992px) {
+  #main-menu .navbar-nav {
+    height: 1em;
+  }
 }
 
 #main-menu .nav-link:hover {
