@@ -94,8 +94,8 @@ $(function () {
           <div class="col-md-4" data-aos="flip-left">
             <h4>Contact</h4>
             <p>
-              <i class="bi bi-envelope"></i> kucykadrian2004@gmail.com<br />
-              <i class="bi bi-telephone"></i> 500899495
+              <i class="bi bi-envelope"></i> Adrian Kucyk<br />
+              <i class="bi bi-telephone"></i> Kuba Kowalski
             </p>
           </div>
           <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
@@ -115,7 +115,7 @@ $(function () {
           <div class="col-md-4" data-aos="flip-left" data-aos-delay="800">
             <h4>About us</h4>
             <p>
-            I'm a junior web developer, I was given task and so here it is.
+            Just us, nothing special
             </p>
           </div>
         </div>

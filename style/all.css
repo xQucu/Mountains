@@ -88,7 +88,12 @@ h2:hover {
 }
 
 .m1 .bg-image1 {
-  background-image: url(../images/cartoon1.png);
+  background-image: url(../images/main-page/cartoon1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.m1 .bg-image2 {
+  background-image: url(../images/main-page/cartoon2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }/*# sourceMappingURL=all.css.map */
