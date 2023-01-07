@@ -92,8 +92,45 @@ h2:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.m1 .bg-image2 {
+
+.m2 .bg-image1 {
   background-image: url(../images/main-page/cartoon2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.m3 .bg-image1 {
+  background-image: url(../images/main-page/cartoon3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.m4 .bg-image1 {
+  background-image: url(../images/main-page/cartoon4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.m5 .bg-image1 {
+  background-image: url(../images/main-page/cartoon5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.m6 .bg-image1 {
+  background-image: url(../images/main-page/cartoon6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.m7 .bg-image1 {
+  background-image: url(../images/main-page/cartoon7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.m8 .bg-image1 {
+  background-image: url(../images/main-page/cartoon8.png);
   background-repeat: no-repeat;
   background-size: cover;
 }/*# sourceMappingURL=all.css.map */
