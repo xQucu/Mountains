@@ -121,48 +121,72 @@ figure:hover,
     top: 50vh;
     left: 50vw;
   }
+  .rotating-container {
+    -webkit-animation: rotate 10s linear infinite;
+            animation: rotate 10s linear infinite;
+  }
+  .rotating-container li a {
+    -webkit-animation: rotate-reverse 10s linear infinite;
+            animation: rotate-reverse 10s linear infinite;
+  }
   .in-center {
     transform: translate(-50%, -50%);
   }
   .orbit1 {
-    transform: translate(-50%, -50%);
-    -webkit-animation: orbit1 10s linear infinite;
-            animation: orbit1 10s linear infinite;
+    transform: translate(-50%, calc(-50% + 200px));
   }
   .orbit2 {
-    transform: translate(-50%, -50%);
-    -webkit-animation: orbit2 10s linear infinite;
-            animation: orbit2 10s linear infinite;
+    transform: translate(calc(-50% + 141.4213562373px), calc(-50% + 141.4213562373px));
   }
   .orbit3 {
-    transform: translate(-50%, -50%);
-    -webkit-animation: orbit3 10s linear infinite;
-            animation: orbit3 10s linear infinite;
+    transform: translate(calc(-50% + 200px), -50%);
   }
   .orbit4 {
-    transform: translate(-50%, -50%);
-    -webkit-animation: orbit4 10s linear infinite;
-            animation: orbit4 10s linear infinite;
+    transform: translate(calc(-50% + 141.4213562373px), calc(-50% - 141.4213562373px));
   }
   .orbit5 {
-    transform: translate(-50%, -50%);
-    -webkit-animation: orbit5 10s linear infinite;
-            animation: orbit5 10s linear infinite;
+    transform: translate(-50%, calc(-50% - 200px));
   }
   .orbit6 {
-    transform: translate(-50%, -50%);
-    -webkit-animation: orbit6 10s linear infinite;
-            animation: orbit6 10s linear infinite;
+    transform: translate(calc(-50% - 141.4213562373px), calc(-50% - 141.4213562373px));
   }
   .orbit7 {
-    transform: translate(-50%, -50%);
-    -webkit-animation: orbit7 10s linear infinite;
-            animation: orbit7 10s linear infinite;
+    transform: translate(calc(-50% - 200px), -50%);
   }
   .orbit8 {
-    transform: translate(-50%, -50%);
-    -webkit-animation: orbit8 10s linear infinite;
-            animation: orbit8 10s linear infinite;
+    transform: translate(calc(-50% - 141.4213562373px), calc(-50% + 141.4213562373px));
+  }
+  @-webkit-keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    to {
+      rotate: 360deg;
+    }
+  }
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    to {
+      rotate: 360deg;
+    }
+  }
+  @-webkit-keyframes rotate-reverse {
+    from {
+      rotate: 0deg;
+    }
+    to {
+      rotate: -360deg;
+    }
+  }
+  @keyframes rotate-reverse {
+    from {
+      rotate: 0deg;
+    }
+    to {
+      rotate: -360deg;
+    }
   }
   @-webkit-keyframes enter-animation {
     from {

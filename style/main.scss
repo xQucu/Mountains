@@ -112,51 +112,73 @@ figure,
     top: 50vh;
     left: 50vw;
   }
+  .rotating-container{
+    animation: rotate 10s linear infinite;
+    li a{
+      animation: rotate-reverse 10s linear infinite;
+    }
+  }
 
   .in-center {
     transform: translate(-50%, -50%);
   }
 
   .orbit1 {
-    transform: translate(-50%, -50%);
-    animation: orbit1 10s linear infinite;
+    transform: translate(-50%, calc(-50% + 200px));
+    // animation: orbit1 10s linear infinite;
   }
 
   .orbit2 {
-    transform: translate(-50%, -50%);
-    animation: orbit2 10s linear infinite;
+    transform: translate(calc(-50% + 141.4213562373095px), calc(-50% + 141.4213562373095px));
+    // animation: orbit2 10s linear infinite;
   }
 
   .orbit3 {
-    transform: translate(-50%, -50%);
-    animation: orbit3 10s linear infinite;
+    transform: translate(calc(-50% + 200px), -50%);
+    // animation: orbit3 10s linear infinite;
   }
 
   .orbit4 {
-    transform: translate(-50%, -50%);
-    animation: orbit4 10s linear infinite;
+    transform: translate(calc(-50% + 141.4213562373095px), calc(-50% - 141.4213562373095px));
+    // animation: orbit4 10s linear infinite;
   }
 
   .orbit5 {
-    transform: translate(-50%, -50%);
-    animation: orbit5 10s linear infinite;
+    transform: translate(-50%, calc(-50% - 200px));
+    // animation: orbit5 10s linear infinite;
   }
 
   .orbit6 {
-    transform: translate(-50%, -50%);
-    animation: orbit6 10s linear infinite;
+    transform: translate(calc(-50% - 141.4213562373095px), calc(-50% - 141.4213562373095px));
+    // animation: orbit6 10s linear infinite;
   }
 
   .orbit7 {
-    transform: translate(-50%, -50%);
-    animation: orbit7 10s linear infinite;
+    transform: translate(calc(-50% - 200px), -50%);
+    // animation: orbit7 10s linear infinite;
   }
 
   .orbit8 {
-    transform: translate(-50%, -50%);
-    animation: orbit8 10s linear infinite;
+    transform: translate(calc(-50% - 141.4213562373095px), calc(-50% + 141.4213562373095px));
+    // animation: orbit8 10s linear infinite;
   }
 
+  @keyframes rotate {
+    from{
+      rotate: 0deg;
+    }
+    to{
+      rotate: 360deg;
+    }
+  }
+  @keyframes rotate-reverse {
+    from{
+      rotate: 0deg;
+    }
+    to{
+      rotate: -360deg;
+    }
+  }
   @keyframes enter-animation {
     from {
       color: rgba(255, 255, 255, 0);

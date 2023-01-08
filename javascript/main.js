@@ -1,7 +1,7 @@
 'use strict';
 $(function () {
   var scrollTop = $(this).scrollTop();
-  if (scrollTop > 300) {
+  if (scrollTop > 256) {
     $('.visibility-toggler-box').show();
     $('.box-hook').removeClass('box');
     $('.orbit-hook').removeClass('orbit');
@@ -14,6 +14,7 @@ $(function () {
     $('.orbit7-hook').removeClass('orbit7');
     $('.orbit8-hook').removeClass('orbit8');
     $('.in-center-hook').removeClass('in-center box');
+    $('.navbar-nav').removeClass('rotating-container');
   } else {
     $('.visibility-toggler-box').off();
     $('.visibility-toggler-box').hide();
@@ -28,11 +29,12 @@ $(function () {
     $('.orbit7-hook').addClass('orbit7');
     $('.orbit8-hook').addClass('orbit8');
     $('.in-center-hook').addClass('in-center box');
+    $('.navbar-nav').addClass('rotating-container');
   }
 });
 $(window).on('scroll', function () {
   var scrollTop = $(this).scrollTop();
-  if (scrollTop > 300) {
+  if (scrollTop > 256) {
     $('.visibility-toggler-box').show();
     $('.box-hook').removeClass('box');
     $('.orbit-hook').removeClass('orbit');
@@ -45,6 +47,7 @@ $(window).on('scroll', function () {
     $('.orbit7-hook').removeClass('orbit7');
     $('.orbit8-hook').removeClass('orbit8');
     $('.in-center-hook').removeClass('in-center box');
+    $('.navbar-nav').removeClass('rotating-container');
   } else {
     $('.visibility-toggler-box').off();
     $('.visibility-toggler-box').hide();
@@ -59,5 +62,6 @@ $(window).on('scroll', function () {
     $('.orbit7-hook').addClass('orbit7');
     $('.orbit8-hook').addClass('orbit8');
     $('.in-center-hook').addClass('in-center box');
+    $('.navbar-nav').addClass('rotating-container');
   }
 });
