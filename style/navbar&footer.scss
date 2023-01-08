@@ -33,6 +33,10 @@ nav .nav-link {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 1px;
+  &:hover{
+    color: #f8b195;
+    font-size: x-large !important;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -41,9 +45,8 @@ nav .nav-link {
   }
 }
 
-#main-menu .nav-link:hover {
-  color: #f8b195;
-  font-size: x-large !important;
+#main-menu{
+  width: 100vw;
 }
 .active {
   font-weight: bold !important;

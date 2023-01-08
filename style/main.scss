@@ -1,3 +1,6 @@
+body {
+  overflow-x: clip;
+}
 .bgimg-1,
 .bgimg-2,
 .bgimg-3,
@@ -21,7 +24,7 @@
 }
 @media only screen and (max-width: 992px) {
   .bgimg-1::before {
-    content: 'Highest mountain peaks in the world';
+    content: "World's highest peaks";
     position: absolute;
     left: 0;
     right: 0;
@@ -332,9 +335,12 @@ nav .nav-link {
   letter-spacing: 1px;
 }
 
-#main-menu .nav-link:hover {
-  color: #f8b195;
-  font-size: xx-large;
+#main-menu {
+  width: 100vw;
+  .nav-link:hover {
+    color: #f8b195;
+    font-size: xx-large;
+  }
 }
 nav {
   background-color: rgba($color: #ffffff, $alpha: 0.8) !important;

@@ -4,7 +4,7 @@ $(function () {
     <nav id="main-menu" class="navbar navbar-expand-lg fixed-top" data-aos="fade-down" data-aos-delay="500" data-aos-duration="3000">
       <div class="container">
         <a class="navbar-brand" href="index.html"
-          >Highest mountain peaks in the world</a
+          >World's highest peaks</a
         >
         <button
           class="navbar-toggler"
