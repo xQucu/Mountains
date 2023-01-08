@@ -1,5 +1,15 @@
 'use strict';
 $(function () {
+  $('.bgimg-1').on('mouseover mousemove', function (e) {
+    console.log(e.clientX, e.clientY);
+    this.style.setProperty(
+      '-webkit-mask-image',
+      `radial-gradient(circle at ${e.clientX * 0.05}% ${
+        e.clientY * 0.1
+      }%, black, transparent)`
+    );
+  });
+
   var scrollTop = $(this).scrollTop();
   if (scrollTop > 256) {
     $('.visibility-toggler-box').show();
