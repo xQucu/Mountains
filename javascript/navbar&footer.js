@@ -92,14 +92,14 @@ $(function () {
       <div class="container">
         <div class="row">
           <div class="col-md-4" data-aos="flip-left">
-            <h4>Contact</h4>
+            <strong>Contact</strong>
             <p>
               <i class="bi bi-envelope"></i> Adrian Kucyk<br />
               <i class="bi bi-telephone"></i> Kuba Kowalski
             </p>
           </div>
           <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
-            <h4>Links</h4>
+            <strong>Links</strong>
             <ul class="list-unstyled">
               <li><a href="index.html">Main page</a></li>
               <li><a href="m1.html">Mount Everest</a></li>
@@ -113,7 +113,7 @@ $(function () {
             </ul>
           </div>
           <div class="col-md-4" data-aos="flip-left" data-aos-delay="800">
-            <h4>About us</h4>
+            <strong>About us</strong>
             <p>
             Just us, nothing special
             </p>

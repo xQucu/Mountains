@@ -19,7 +19,7 @@ body {
 }
 
 .bgimg-1 {
-  background-image: url("../images/main-page/cartoon1.png");
+  background-image: url("../images/main-page/cartoon1.webp");
   min-height: 50vh;
   -webkit-mask-image: radial-gradient(circle at 50% 50%, black, transparent);
           mask-image: radial-gradient(circle at 50% 50%, black, transparent);
@@ -40,42 +40,42 @@ body {
   }
 }
 .bgimg-2 {
-  background-image: url("../images/main-page/cartoon2.png");
+  background-image: url("../images/main-page/cartoon2.webp");
   min-height: 450px;
 }
 
 .bgimg-3 {
-  background-image: url("../images/main-page/cartoon3.png");
+  background-image: url("../images/main-page/cartoon3.webp");
   min-height: 450px;
 }
 
 .bgimg-4 {
-  background-image: url("../images/main-page/cartoon4.png");
+  background-image: url("../images/main-page/cartoon4.webp");
   min-height: 450px;
 }
 
 .bgimg-5 {
-  background-image: url("../images/main-page/cartoon5.png");
+  background-image: url("../images/main-page/cartoon5.webp");
   min-height: 450px;
 }
 
 .bgimg-6 {
-  background-image: url("../images/main-page/cartoon6.png");
+  background-image: url("../images/main-page/cartoon6.webp");
   min-height: 450px;
 }
 
 .bgimg-7 {
-  background-image: url("../images/main-page/cartoon7.png");
+  background-image: url("../images/main-page/cartoon7.webp");
   min-height: 450px;
 }
 
 .bgimg-8 {
-  background-image: url("../images/main-page/cartoon8.png");
+  background-image: url("../images/main-page/cartoon8.webp");
   min-height: 450px;
 }
 
 .bgimg-9 {
-  background-image: url("../images/main-page/cartoon9.png");
+  background-image: url("../images/main-page/cartoon9.webp");
   min-height: 450px;
 }
 
@@ -114,8 +114,7 @@ figure:hover,
   }
   .orbit * {
     color: black;
-    -webkit-animation: enter-animation 10s linear;
-            animation: enter-animation 10s linear;
+    animation: enter-animation 10s linear;
   }
   .box {
     position: absolute;
@@ -123,12 +122,10 @@ figure:hover,
     left: 50vw;
   }
   .rotating-container {
-    -webkit-animation: rotate 10s linear infinite;
-            animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite;
   }
   .rotating-container li a {
-    -webkit-animation: rotate-reverse 10s linear infinite;
-            animation: rotate-reverse 10s linear infinite;
+    animation: rotate-reverse 10s linear infinite;
   }
   .in-center {
     transform: translate(-50%, -50%);
@@ -157,28 +154,12 @@ figure:hover,
   .orbit8 {
     transform: translate(calc(-50% - 141.4213562373px), calc(-50% + 141.4213562373px));
   }
-  @-webkit-keyframes rotate {
-    from {
-      rotate: 0deg;
-    }
-    to {
-      rotate: 360deg;
-    }
-  }
   @keyframes rotate {
     from {
       rotate: 0deg;
     }
     to {
       rotate: 360deg;
-    }
-  }
-  @-webkit-keyframes rotate-reverse {
-    from {
-      rotate: 0deg;
-    }
-    to {
-      rotate: -360deg;
     }
   }
   @keyframes rotate-reverse {
@@ -189,15 +170,6 @@ figure:hover,
       rotate: -360deg;
     }
   }
-  @-webkit-keyframes enter-animation {
-    from {
-      color: rgba(255, 255, 255, 0);
-    }
-    to {
-      color: rgb(0, 0, 0);
-      text-shadow: navy;
-    }
-  }
   @keyframes enter-animation {
     from {
       color: rgba(255, 255, 255, 0);
@@ -205,23 +177,6 @@ figure:hover,
     to {
       color: rgb(0, 0, 0);
       text-shadow: navy;
-    }
-  }
-  @-webkit-keyframes orbit1 {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg) translate(150px);
-    }
-    25% {
-      transform: translate(-50%, -50%) rotate(90deg) translate(250px);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(180deg) translate(350px);
-    }
-    75% {
-      transform: translate(-50%, -50%) rotate(270deg) translate(250px);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg) translate(150px);
     }
   }
   @keyframes orbit1 {
@@ -241,23 +196,6 @@ figure:hover,
       transform: translate(-50%, -50%) rotate(360deg) translate(150px);
     }
   }
-  @-webkit-keyframes orbit2 {
-    0% {
-      transform: translate(-50%, -50%) rotate(45deg) translate(250px);
-    }
-    25% {
-      transform: translate(-50%, -50%) rotate(135deg) translate(350px);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(225deg) translate(250px);
-    }
-    75% {
-      transform: translate(-50%, -50%) rotate(315deg) translate(150px);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(405deg) translate(250px);
-    }
-  }
   @keyframes orbit2 {
     0% {
       transform: translate(-50%, -50%) rotate(45deg) translate(250px);
@@ -273,23 +211,6 @@ figure:hover,
     }
     100% {
       transform: translate(-50%, -50%) rotate(405deg) translate(250px);
-    }
-  }
-  @-webkit-keyframes orbit3 {
-    0% {
-      transform: translate(-50%, -50%) rotate(90deg) translate(350px);
-    }
-    25% {
-      transform: translate(-50%, -50%) rotate(180deg) translate(250px);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(270deg) translate(150px);
-    }
-    75% {
-      transform: translate(-50%, -50%) rotate(360deg) translate(250px);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(450deg) translate(350px);
     }
   }
   @keyframes orbit3 {
@@ -309,23 +230,6 @@ figure:hover,
       transform: translate(-50%, -50%) rotate(450deg) translate(350px);
     }
   }
-  @-webkit-keyframes orbit4 {
-    0% {
-      transform: translate(-50%, -50%) rotate(135deg) translate(250px);
-    }
-    25% {
-      transform: translate(-50%, -50%) rotate(225deg) translate(150px);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(315deg) translate(250px);
-    }
-    75% {
-      transform: translate(-50%, -50%) rotate(405deg) translate(350px);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(495deg) translate(250px);
-    }
-  }
   @keyframes orbit4 {
     0% {
       transform: translate(-50%, -50%) rotate(135deg) translate(250px);
@@ -341,23 +245,6 @@ figure:hover,
     }
     100% {
       transform: translate(-50%, -50%) rotate(495deg) translate(250px);
-    }
-  }
-  @-webkit-keyframes orbit5 {
-    0% {
-      transform: translate(-50%, -50%) rotate(180deg) translate(150px);
-    }
-    25% {
-      transform: translate(-50%, -50%) rotate(270deg) translate(250px);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(360deg) translate(350px);
-    }
-    75% {
-      transform: translate(-50%, -50%) rotate(450deg) translate(250px);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(540deg) translate(150px);
     }
   }
   @keyframes orbit5 {
@@ -377,23 +264,6 @@ figure:hover,
       transform: translate(-50%, -50%) rotate(540deg) translate(150px);
     }
   }
-  @-webkit-keyframes orbit6 {
-    0% {
-      transform: translate(-50%, -50%) rotate(225deg) translate(250px);
-    }
-    25% {
-      transform: translate(-50%, -50%) rotate(315deg) translate(150px);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(405deg) translate(250px);
-    }
-    75% {
-      transform: translate(-50%, -50%) rotate(495deg) translate(350px);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(585deg) translate(250px);
-    }
-  }
   @keyframes orbit6 {
     0% {
       transform: translate(-50%, -50%) rotate(225deg) translate(250px);
@@ -411,23 +281,6 @@ figure:hover,
       transform: translate(-50%, -50%) rotate(585deg) translate(250px);
     }
   }
-  @-webkit-keyframes orbit7 {
-    0% {
-      transform: translate(-50%, -50%) rotate(270deg) translate(350px);
-    }
-    25% {
-      transform: translate(-50%, -50%) rotate(360deg) translate(250px);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(450deg) translate(150px);
-    }
-    75% {
-      transform: translate(-50%, -50%) rotate(540deg) translate(250px);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(630deg) translate(350px);
-    }
-  }
   @keyframes orbit7 {
     0% {
       transform: translate(-50%, -50%) rotate(270deg) translate(350px);
@@ -443,23 +296,6 @@ figure:hover,
     }
     100% {
       transform: translate(-50%, -50%) rotate(630deg) translate(350px);
-    }
-  }
-  @-webkit-keyframes orbit8 {
-    0% {
-      transform: translate(-50%, -50%) rotate(315deg) translate(150px);
-    }
-    25% {
-      transform: translate(-50%, -50%) rotate(405deg) translate(250px);
-    }
-    50% {
-      transform: translate(-50%, -50%) rotate(495deg) translate(350px);
-    }
-    75% {
-      transform: translate(-50%, -50%) rotate(585deg) translate(250px);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(675deg) translate(150px);
     }
   }
   @keyframes orbit8 {
